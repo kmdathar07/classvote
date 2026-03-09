@@ -27,10 +27,6 @@ Votes update **live using WebSockets**, making it perfect for classrooms, worksh
 
 # 📁 Project Structure
 
-
-## 📁 Project Structure
-
-```
 classvote/
 │
 ├── frontend/                     # React + Vite + Tailwind
