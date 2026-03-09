@@ -15,7 +15,7 @@ Votes update **live using WebSockets**, making it perfect for classrooms, worksh
 # 🚀 Live Demo
 
 🌐 **Frontend:**  
-`https://your-vercel-url.vercel.app`
+`https://classvote-delta.vercel.app/`
 
 ⚡ **Backend API:**  
 `https://classvote-pis7.onrender.com`
@@ -28,37 +28,49 @@ Votes update **live using WebSockets**, making it perfect for classrooms, worksh
 # 📁 Project Structure
 
 
-classvote
+## 📁 Project Structure
+
+```
+classvote/
 │
-├── frontend/ # React + Vite + Tailwind
-│ ├── src/
-│ │ ├── pages/ # LoginPage, Dashboard, CreateRoom, HostRoom, AttendeeRoom
-│ │ ├── hooks/ # useWebSocket.js
-│ │ ├── utils/ # api.js, auth.js
-│ │ └── index.css
-│ │
-│ ├── .env.example
-│ ├── package.json
-│ └── vercel.json
+├── frontend/                     # React + Vite + Tailwind
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── LoginPage
+│   │   │   ├── Dashboard
+│   │   │   ├── CreateRoom
+│   │   │   ├── HostRoom
+│   │   │   └── AttendeeRoom
+│   │   │
+│   │   ├── hooks/
+│   │   │   └── useWebSocket.js
+│   │   │
+│   │   └── utils/
+│   │       ├── api.js
+│   │       └── auth.js
+│   │
+│   ├── index.css
+│   ├── package.json
+│   └── vercel.json
 │
-├── backend/ # FastAPI + Python
-│ ├── routers/
-│ │ ├── users.py
-│ │ ├── rooms.py
-│ │ ├── votes.py
-│ │ └── questions.py
-│ │
-│ ├── services/
-│ │ ├── database.py
-│ │ └── connection_manager.py
-│ │
-│ ├── main.py
-│ ├── requirements.txt
-│ └── render.yaml
+├── backend/                      # FastAPI + Python
+│   ├── routers/
+│   │   ├── users.py
+│   │   ├── rooms.py
+│   │   ├── votes.py
+│   │   └── questions.py
+│   │
+│   ├── services/
+│   │   ├── database.py
+│   │   └── connection_manager.py
+│   │
+│   ├── main.py
+│   ├── requirements.txt
+│   └── render.yaml
 │
 └── docs/
-└── schema.sql # Supabase PostgreSQL schema
-
+    └── schema.sql                # Supabase PostgreSQL schema
+```
 
 ---
 
